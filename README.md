@@ -64,5 +64,8 @@ biggest_change = max(biggest_change, np.abs(old_v - V[s]))
           if biggest_change < SMALL_ENOUGH:
                 biggest_change = -.5
           result_array = np.append(result_array, biggest_change)
-
+#...
+import matplotlib.pyplot as plt
+plt.plot(result_array)
+plt.show()
 ```
