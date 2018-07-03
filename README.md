@@ -47,3 +47,22 @@ if v > best_value:
 <p align="center">
   <img src="largegamma1.png" />
 </p>
+<span style="font-family:Papyrus"> We can see from the above graphs how gamma effected the convergance rate and values of the function. The top graph (gamma = .1) shows convergance of policy occurred around 100 total iterations. While gamma large (gamma = .9) converged around 500 total iterations. I ran the this experiemnt several times and each time simmiliar graphs were demonstated. With gamma large, we seemed to have a long time before convergance on our fixed policy value. I made the graph represent a policy convergence when the y value hit -.5 (see code below on how I did this). The first convergence is slow with gamma being high and pretty regular when gamma is small. 
+</span>
+
+```python
+SMALL_ENOUGH = 1e-3
+GAMMA = 0.9
+ALL_POSSIBLE_ACTIONS = ('U', 'D', 'L', 'R')
+count = 0
+result_array = np.array([])
+
+#...
+
+biggest_change = max(biggest_change, np.abs(old_v - V[s]))
+          
+          if biggest_change < SMALL_ENOUGH:
+                biggest_change = -.5
+          result_array = np.append(result_array, biggest_change)
+
+```
