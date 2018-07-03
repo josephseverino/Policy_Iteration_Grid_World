@@ -8,7 +8,7 @@
 
 <p align="center">
   <h3>Grid World </>
-  <img src="Grid_world.png" )
+  <img src="Grid_world.png" />
 </p>
 
 ### Fixed Policy iteration
@@ -22,5 +22,5 @@
 
 <p align="center">
   <h3>Value Function </>
-  <img src="equation_value_func.png" )
+  <img src="equation_value_func.png" />
 </p>
