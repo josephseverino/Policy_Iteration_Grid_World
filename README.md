@@ -45,5 +45,5 @@ if v > best_value:
   <img src="smallgamma.png" />
 </p>
 <p align="center">
-  <img src="largegamma.png" />
+  <img src="largegamma1.png" />
 </p>
