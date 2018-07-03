@@ -25,7 +25,7 @@
 
 ### Iterative Policy Evaluation
 
-<span style="font-family:Papyrus"> The difference between iterative policy evaluation and fixed policy iteration is that iterative policy evaluation contains fixed policy iteration in it. Policy evaluation takes a random set of actions (policy) and estimates (converges) on its value function (stated above) and then tries a new policy, estimates its value function till convergence and decides whether or not to keep it via keeping the higher value (see code below).
+<span style="font-family:Papyrus"> The difference between iterative policy evaluation and fixed policy iteration is that iterative policy evaluation contains fixed policy iteration in it. Policy evaluation takes a random set of actions (policy) and estimates (converges) on its value function (stated above) and then tries a new policy, estimates its value function till convergence and decides whether or not to keep it via keeping the higher value policy. Once the policy hasn't changed from the last fixed policy iteration the Policy Evaluation has converged (see code below).
 </span>
 
 ```python
@@ -38,3 +38,12 @@ if v > best_value:
         if new_a != old_a:
           is_policy_converged = False
  ```
+### Changing Gamma (Discount Factor)
+
+#### Gamma Large vs Gamma Small
+<p align="center">
+  <img src="smallgamma.png" />
+</p>
+<p align="center">
+  <img src="largegamma.png" />
+</p>
