@@ -47,7 +47,8 @@ if v > best_value:
 <p align="center">
   <img src="largegamma1.png" />
 </p>
-<span style="font-family:Papyrus"> We can see from the above graphs how gamma effected the convergance rate and values of the function. The top graph (gamma = .1) shows convergance of policy occurred around 100 total iterations. While gamma large (gamma = .9) converged around 500 total iterations. I ran the this experiemnt several times and each time simmiliar graphs were demonstated. With gamma large, we seemed to have a long time before convergance on our fixed policy value. I made the graph represent a policy convergence when the y value hit -.5 (see code below on how I did this). The first convergence is slow with gamma being high and pretty regular when gamma is small. 
+
+<span style="font-family:Papyrus"> We can see from the above graphs how gamma affected the convergance rate and values of the function. The top graph (gamma = .1) shows convergance of policy occurred around 100 total iterations. While gamma large (gamma = .9) converged around 500 total iterations. I ran the this experiemnt several times and each time simmiliar graphs were demonstated. With gamma large, we seemed to have a long time before convergance on our fixed policy value. I made the graph represent a policy convergence when the y value hit -.5 (see code below on how I did this). The first convergence is slow with gamma being high and pretty regular when gamma is small. 
 </span>
 
 ```python
@@ -69,3 +70,7 @@ import matplotlib.pyplot as plt
 plt.plot(result_array)
 plt.show()
 ```
+## Conclusion
+
+<span style="font-family:Papyrus"> Fixed policy iteration is a sub algorithm of Policy Evaluation. Thus, having two convergnece loops can be computationally expensive, but we can be certain of finding an optimal policy given this algorithm. As for large and small values of Gamma, we can say both converge on the optimal policy but for this particular enviroment, a small gamma did it using less computational power. However, the values generated from the larger Gamma seemed to be most reasonable for understanding the problem, since it is reasonable to have a penalty for being further from the terminal states. However, small Gamma showed very little to noseemly no difference from the starting position to right and up states. 
+</span>
