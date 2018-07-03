@@ -7,7 +7,6 @@
 
 
 <p align="center">
-  <h3>Grid World </>
   <img src="Grid_world.png" />
 </p>
 
@@ -21,6 +20,5 @@
 
 
 <p align="center">
-  <h3>Value Function </>
   <img src="equation_value_func.png" />
 </p>
